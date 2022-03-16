@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 interface Perfect_Square
 {
-    //public boolean printPS(int n1);
+    Boolean PrintPerfectMethod(int n1);
 }
-namespace PSquare
+class PSquare : Perfect_Square
 {
-    
-    class Program
+    public Boolean PrintPerfectMethod(int n1)
     {
-        static void Main(string[] args)
-        {
-        }
+        return n1 > 0 && Math.Sqrt((double)n1) % 1 == 0;
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        PSquare sq = new PSquare();
+        Console.WriteLine(sq.PrintPerfectMethod(25));
+        Console.WriteLine(sq.PrintPerfectMethod(27));
+        Console.WriteLine(sq.PrintPerfectMethod(-25));
     }
 }
