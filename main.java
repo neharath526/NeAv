@@ -1,4 +1,5 @@
 public class main{
+//Neha: I learned about what an interface is and how to return a boolean through lambda notation. I also learned about GitKraken and how to make branches. 
 	interface Perfect_Square 
     { 
         boolean boolPerfSquare(int n); 
