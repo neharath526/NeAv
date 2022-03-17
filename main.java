@@ -1,13 +1,13 @@
 public class main{
-
-	interface Perfect_Square
-    {
-        boolean boolPerfSquare(int n);
-    }
     //Avni - learned how to properly use an interface in the runner
     interface Print_Quotient{
 	    void printQuotient(float num1, float num2);
     }
+//Neha: I learned about what an interface is and how to return a boolean through lambda notation. I also learned about GitKraken and how to make branches. 
+	interface Perfect_Square 
+    { 
+        boolean boolPerfSquare(int n); 
+    } 
     public static void main(String args[]) {
       Perfect_Square ps = (n1) ->  (n1 > 0 && Math.sqrt((double)n1) % 1 == 0);
       System.out.println(ps.boolPerfSquare(25));
